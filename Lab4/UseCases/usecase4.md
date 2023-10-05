@@ -6,31 +6,33 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Paint
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: To make pixel color on canvas change wherever the mouse is located, if the mouse is pressed and the user left-clicked
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The program must be responsive and available. A color must be pre-selected. 
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The mouse is pressed and the user left clicks without releasing the mouse.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
- 
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Scenario 1**: A user will press the mouse and left clicks, and move the mouse to apply a consistent line (drag and draw).
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Scenario 2**: A user will press the mouse and left click, and release the mouse immediately.
 
-**When available**: *the targeted release that covers this use case*
+**Exceptions**: The program may be unresponsive. In this case, the program can be terminated from operating system. It is also possible that no color has been selected since the start of this program. In this case, the default color black will be applied.
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Priority**: High Priority
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**When available**: First Release
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channel to actor**: The actor communicates via the mouse.
 
-**Open Issues**: *notes, concerns, or other materials*
+**Secondary Actor**: N/A
+
+**Channels to Secondary Actors**: N/A
+
+**Open Issues**: Add black as a default color.
 
 <hr>
 

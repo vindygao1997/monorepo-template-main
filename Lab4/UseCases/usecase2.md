@@ -6,32 +6,33 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Color Selection
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: To select a color, to prepare for further actions such as clearing canvas and drawing.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The application must be responsive and execution is ongoing. 
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The user presses a key between 1 and 8.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario 1**: The user wants to clear the canvas and fill the canvas with a specific color.
+
+**Scenario 2**: The user wants to paint on the canvas, therefore selecting a color ready to paint.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: The program may be unresponsive. In this case, the program should be terminated from operation system.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: High Priority
 
-**When available**: *the targeted release that covers this use case*
+**When available**: First Release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: The primary channel actor communicates with is device keyboard, specifically the number pane.
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
-
+**Open Issues**: In the future, we may set a default color if no selection is made.
 <hr>
 
 

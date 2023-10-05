@@ -6,32 +6,35 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Program Start
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: To begin the execution of the program, to present a 600x400 empty canvas available to be painted on
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The program must be available for user
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: (1) Clicking the application icon (2) Typing in application url to visit the application
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario 1**: A user, who has downloaded the application, will click the application icon
+
+**Scenario 2**: A user will type in the application url and hit "Enter" to visit the application website
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions 1**: The application may become unresponsive. In this case, the application will be terminated from the operation system. 
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Exceptions 2**: The application server may be down. In this case, the user will exit the webpage, switch to software version of the application.
 
-**When available**: *the targeted release that covers this use case*
+**Priority**: High Priority
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**When available**: First release
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Channel to actor**: The primary actor communicates through I/O devices or browser. As of I/O devices, this includes the mouse and keyboard. The system is responsible for maintaining the availability of application server to public API calls. The system is also responsible for maintaining the availability of software for downloads. The user is responsible for other inputs, including clicking the software or providing url, and ensuring an available network services.
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Secondary Actor**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Channels to Secondary Actors**: N/A
 
+**Open Issues**: N/A
 <hr>
 
 
