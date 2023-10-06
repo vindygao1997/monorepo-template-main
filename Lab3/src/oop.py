@@ -7,13 +7,13 @@ class MObject:
 
 
 class Image:
-    def __init__(self, w, h):
+    def __init__(self, w, h, texture):
         print("Constructor called")
         self.m_width = w
         self.m_height = h
         self.m_colorChannels = 3  # Assume we support RGB channels only.
         self.m_Pixels = [random.randint(0, 255) for _ in range(w * h * self.m_colorChannels)]
-
+        self.m_Texture = texture
     """
     def __del__(self):
         # https://docs.python.org/3/reference/datamodel.html#object.__del__
@@ -38,17 +38,19 @@ class Image:
         self.m_Pixels = [value] * (self.m_width * self.m_height * self.m_colorChannels)
 
 
-class Texture(Image):
+class Texture():
     pass
 
 
 def main():
     random.seed()
 
+    # Create a Texture object
+    texture = Texture()
     # Create a first image
-    image1 = Image(100, 200)
+    image1 = Image(100, 200, texture)
     # Create a second image
-    image2 = Image(image1.getWidth(), image1.getHeight())
+    image2 = Image(image1.getWidth(), image1.getHeight(), texture)
 
     print(f"image1: {image1.getWidth()}, {image1.getHeight()}")
     print(f"image1 red color at (0, 0): {image1.getPixelColorR(0, 0)}")
